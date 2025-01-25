@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Services\User\TrelloService;
 use Illuminate\Console\Command;
+use Illuminate\Contracts\Container\BindingResolutionException;
 
 class TrelloSetupCommand extends Command
 {
@@ -25,6 +26,7 @@ class TrelloSetupCommand extends Command
 
     /**
      * Execute the console command.
+     * @throws BindingResolutionException
      */
     public function handle()
     {

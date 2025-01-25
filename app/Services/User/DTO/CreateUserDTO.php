@@ -2,7 +2,12 @@
 
 namespace App\Services\User\DTO;
 
-class CreateUserDTO
+use Spatie\LaravelData\Data;
+
+class CreateUserDTO extends Data
 {
+
+    public string $name;
+    public int $telegram_id;
 
 }
