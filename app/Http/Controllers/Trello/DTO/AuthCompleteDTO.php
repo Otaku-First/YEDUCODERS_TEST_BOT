@@ -13,4 +13,5 @@ class AuthCompleteDTO extends Data
     #[Required]
     public string $token;
 
+
 }
